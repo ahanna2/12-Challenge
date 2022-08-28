@@ -1,0 +1,33 @@
+{
+	"name": "employee-tracker",
+	"version": "1.0.0",
+	"description": "<h1 align=\"center\">Employee Tracker Using MySQL, Inquirer, Console.Table and Node.js 👋</h1>",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"migrate": "mysql db/employees.db < db/schema.sql",
+		"seed": "mysql db/employees.db < db/seeds.sql",
+		"db": "mysql db/employees.db",
+		"watch": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jpd61/employee-tracker.git"
+	},
+	"author": "Joseph DeWoody",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jpd61/employee-tracker/issues"
+	},
+	"homepage": "https://github.com/jpd61/employee-tracker#readme",
+	"dependencies": {
+		"console.table": "^0.10.0",
+		"express": "^4.17.1",
+		"inquirer": "^7.1.0",
+		"mysql2": "^2.1.0",
+		"nodemon": "^2.0.4",
+		"validator": "^13.0.0"
+	},
+	"keywords": []
+}
